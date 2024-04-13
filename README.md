@@ -25,7 +25,7 @@
 2. Открыть проект в IDE;
 3. Установить пакеты, используемые в приложении;
 4. Запустить проект (вставив свой токен в выделенное место **token**):
-   - POWERSHELL: $env:REACT_APP_TOKEN="**token**" ; npm run start
-   - BASH: REACT_APP_TOKEN=token npm run start
-   - CMD: set REACT_APP_TOKEN=token && npm run start
+   - POWERSHELL: ```$env:REACT_APP_TOKEN="**token**" ; npm run start```
+   - BASH: ```REACT_APP_TOKEN=token npm run start```
+   - CMD: ```set REACT_APP_TOKEN=token && npm run start```
 
