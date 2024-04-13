@@ -21,9 +21,9 @@
  - Выполнение трёх попыток повторного запроса, если запрос был неудачным;
 
 ## Используемые запросы к API
-- Поиск по заданным параметрам:
+- Получение списка фильмов по заданным параметрам:
   `https://api.kinopoisk.dev/v1.4/movie?page=${page}&limit=${limit}&year=${year}&countries.name=${country}&ageRating=${ageRating}`
-- Поиск фильмов по имени:
+- Получение списка фильмов по названию:
 	`https://api.kinopoisk.dev/v1.4/movie/search?page=${page}&limit=${limit}&query=${query}`
 - Получение списка стран:
   `https://api.kinopoisk.dev/v1/movie/possible-values-by-field?field=countries.name`
