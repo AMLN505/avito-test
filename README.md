@@ -21,7 +21,10 @@
  - Выполнение трёх попыток повторного запроса, если запрос был неудачным;
 
 ## Используемые методы запросов
-https://api.kinopoisk.dev/v1.4/movie?page=`${page}`&limit=`${limit}`&year=`${year}`&countries.name=`${country}`&ageRating=`${ageRating}`
+- Фильтрация:
+  https://api.kinopoisk.dev/v1.4/movie?page=**page**&limit=**limit**&year=**year**&countries.name=**country**&ageRating=**ageRating**
+- Поиск:
+	https://api.kinopoisk.dev/v1.4/movie/search?page=**page**&limit=**limit**&query=**query**
 
 
 ## Инструкция по запуску
