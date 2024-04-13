@@ -22,7 +22,7 @@
 
 ## Используемые методы запросов
 - Фильтрация:
-  https://api.kinopoisk.dev/v1.4/movie?page=**page**&limit=**limit**&year=**year**&countries.name=**country**&ageRating=**ageRating**
+  'https://api.kinopoisk.dev/v1.4/movie?page=**page**&limit=**limit**&year=**year**&countries.name=**country**&ageRating=**ageRating**'
 - Поиск:
 	https://api.kinopoisk.dev/v1.4/movie/search?page=**page**&limit=**limit**&query=**query**
 
