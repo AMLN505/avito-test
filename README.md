@@ -21,11 +21,24 @@
  - Выполнение трёх попыток повторного запроса, если запрос был неудачным;
 
 ## Используемые методы запросов
-- Фильтрация:
-  'https://api.kinopoisk.dev/v1.4/movie?page=**page**&limit=**limit**&year=**year**&countries.name=**country**&ageRating=**ageRating**'
-- Поиск:
-	https://api.kinopoisk.dev/v1.4/movie/search?page=**page**&limit=**limit**&query=**query**
-
+- Поиск по заданным параметрам:
+  `https://api.kinopoisk.dev/v1.4/movie?page=${page}&limit=${limit}&year=${year}&countries.name=${country}&ageRating=${ageRating}`
+- Поиск фильмов по имени:
+	`https://api.kinopoisk.dev/v1.4/movie/search?page=${page}&limit=${limit}&query=${query}`
+- Получение списка стран:
+  `https://api.kinopoisk.dev/v1/movie/possible-values-by-field?field=countries.name`
+- Получение информации о фильме по ID:
+  `https://api.kinopoisk.dev/v1.4/movie/${id}`
+- Получение информации об изображениях фильма:
+  `https://api.kinopoisk.dev/v1.4/image?page=1&limit=30&selectFields=&movieId=${id}&type=!shooting`
+- Получение информации об отзывах о фильме:
+  `https://api.kinopoisk.dev/v1.4/review?page=${page}&limit=3&movieId=${id}`
+- Получение информации о сезонах и сериях:
+  `https://api.kinopoisk.dev/v1.4/season?page=${page}&limit=10&movieId=${id}`
+- Получение списка жанров:
+  `https://api.kinopoisk.dev/v1/movie/possible-values-by-field?field=genres.name`
+- Получение случайного фильма, соответствующего параметрам:
+  `https://api.kinopoisk.dev/v1.4/movie/random?isSeries=${isSeries}&rating.kp=${kpRating}&genres.name=${genre}&countries.name=${country}&networks.items.name=${studio}`
 
 ## Инструкция по запуску
 1. Скачать сборку из ветки main;
