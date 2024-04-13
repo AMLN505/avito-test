@@ -20,6 +20,10 @@
  - Использование TypeScript;
  - Выполнение трёх попыток повторного запроса, если запрос был неудачным;
 
+## Используемые методы запросов
+`https://api.kinopoisk.dev/v1.4/movie?page=${page}&limit=${limit}&year=${year}&countries.name=${country}&ageRating=${ageRating}`
+
+
 ## Инструкция по запуску
 1. Скачать сборку из ветки main;
 2. Открыть проект в IDE;
